@@ -1,0 +1,18 @@
+{
+  "name": "skeleton-app/blog",
+  "description": "SkeletonApp Module Blog",
+  "type": "modules",
+  "require": {
+    "php": ">=8.2",
+    "skeleton-app/main": "@dev",
+    "skeleton-app/view": "@dev",
+    "skeleton-app/view-latte": "@dev"
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-main": "dev"
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": false
+}
