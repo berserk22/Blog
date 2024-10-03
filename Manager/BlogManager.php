@@ -17,6 +17,9 @@ class BlogManager {
 
     private string $blogEntity = "Blog\Blog";
 
+    /**
+     * @return void
+     */
     public function initEntity(): void {
         if (!$this->getContainer()->has($this->blogEntity)){
             $this->getContainer()->set($this->blogEntity, function () {
