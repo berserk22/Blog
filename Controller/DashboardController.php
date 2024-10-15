@@ -61,8 +61,10 @@ class DashboardController extends Dashboard {
      * @param Request $request
      * @param Response $response
      * @return Response
+     * @throws ContainerExceptionInterface
      * @throws DependencyException
      * @throws NotFoundException
+     * @throws NotFoundExceptionInterface
      */
     public function postAdd(Request $request, Response $response): Response {
         if (!$this->getAuth()->getStatus()){
